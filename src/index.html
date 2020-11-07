@@ -1,97 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Parcel BoilerPlate</title>
-    <!-- scss file will be replaced with bundled css -->
-    <link href="sass/main.scss" rel="stylesheet" />
-  </head>
 
-  <body>
-    <a
-      href="https://github.com/abhijithvijayan/parcel-sass-bootstrap-boilerplate"
-      class="github-corner"
-      aria-label="View source on GitHub"
-      ><svg
-        width="80"
-        height="80"
-        viewBox="0 0 250 250"
-        style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0;"
-        aria-hidden="true"
-      >
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path
-          d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-          fill="currentColor"
-          style="transform-origin: 130px 106px;"
-          class="octo-arm"
-        ></path>
-        <path
-          d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-          fill="currentColor"
-          class="octo-body"
-        ></path></svg></a
-    ><style>
-      .github-corner:hover .octo-arm {
-        animation: octocat-wave 560ms ease-in-out;
-      }
-      @keyframes octocat-wave {
-        0%,
-        100% {
-          transform: rotate(0);
-        }
-        20%,
-        60% {
-          transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-          transform: rotate(10deg);
-        }
-      }
-      @media (max-width: 500px) {
-        .github-corner:hover .octo-arm {
-          animation: none;
-        }
-        .github-corner .octo-arm {
-          animation: octocat-wave 560ms ease-in-out;
-        }
-      }
-    </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Bipad-Website</title>
+  <!-- scss file will be replaced with bundled css -->
+  <link href="sass/main.scss" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
 
-    <main id="main" class="container">
-      <section id="home">
-        <div class="row pt-20">
-          <div class="col-md-12 text-center">
-            <a
-              href="#"
-              data-toggle="tooltip"
-              data-placement="bottom"
-              title="JQuery Works :)"
-              >Hello World :)</a
-            >
-            <p class="pt-5">
-              This website project uses
-              <span
-                ><a
-                  href="https://parceljs.org/"
-                  target="_blank"
-                  rel="noopener"
-                  data-toggle="tooltip"
-                  data-placement="top"
-                  title="Visit"
-                  >Parcel</a
-                ></span
-              >
-              to compile the SCSS and JS files.
-            </p>
+<body>
+  <!-- navabr -->
+  <div id="navbar" class="custom-navbar fixed-top">
+    <nav class="navbar top navbar-expand-lg top-fixed navbar-light">
+      <div class="d-flex justify-content-between container">
+        <div class="mail">
+          <a href="mailto:info@bipad.gov.np" target="_blank">
+            <i class="ri-mail-fill"></i>
+            <span>info@bipad.gov.np</span>
+          </a>
+        </div>
+        <div class="links">
+          <ul class="list-group list-group-horizontal">
+            <li class=""><a href="" class="link">Road Condition Report </a></li>
+            <li class="disaster"><a href="" class="link">Submit Disaster Report</a></li>
+            <li class="lang switch-field">
+              <input type="radio" id="radio-one" name="switch-one" value="yes" checked />
+              <label for="radio-one">EN</label>
+              <input type="radio" id="radio-two" name="switch-one" value="no" />
+              <label for="radio-two">NE</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navs navbar navbar-expand-lg top-fixed navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html"><img src="./assets/logo.svg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+          </ul>
+          <div class="navbar-links navbar-right">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  About Us
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a <a class="dropdown-item" href="">Board Members & Staffs</a>
+                  <a class="dropdown-item" href="">Partners</a>
+                  <a class="dropdown-item" href="">Functions</a>
+                  <a class="dropdown-item" href="">Act & Foundation</a>
+                  <a class="dropdown-item" href="">Subject Commetee Member</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="">Photos & Media</a>
+                  <a class="dropdown-item" href="">News & Updates</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Publications
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="">For Institutions</a>
+                  <a class="dropdown-item" href="">For Health Professionals</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Communication Center
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="">Programmes</a>
+                  <a class="dropdown-item" href="">Registered Colleges</a>
+                  <a class="dropdown-item" href="">Syllabus</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">FAQ</a>
+              </li>
+
+            </ul>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </nav>
+    <div class="nav-news-update">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div class="update-block">
+            <span><i class="ri-flag-2-fill"></i>
+              Bipad Updates</span>
+          </div>
+          <marquee onMouseOver="this.stop()" onMouseOut="this.start()">
+            <span>
+              <a href="">1155 to find out about rains and floods and 1149 to ask for help for rescue
+              </a>
+            </span>
+            <span>
+              <a href="">One of the ways to reduce land erosion due to floods is to cut bamboo
+              </a>
+            </span>
+            <span>
+              <a href="">1155 to find out about rains and floods and 1149 to ask for help for rescue
+              </a>
+            </span>
+          </marquee>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="main-banner">
+    <div class="banner-slider">
+      <div class="slide">
+        <div class="image-wrapper ">
+          <img src="./assets/slide1.jpg" alt="pm">
+        </div>
+        <div class="image-overlay"></div>
+        <div class="container">
+          <div class="slide-content  animate__animated animate__fadeInUp">
+            <span class="date"><i class="ri-time-line ri-lg"></i> 24 Oct , 2020 </span>
+            <h1>Procedures are being developed to rehabilitate those affected by the earthquake as well as those
+              affected by the disaster</h1>
+            <a href="" class="btn btn-custom">Read Full Story <i class="ri-arrow-right-s-line"></i> </a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="image-wrapper">
+          <img src="./assets/slide2.jpg" alt="pm">
+        </div>
+        <div class="image-overlay"></div>
+        <div class="container">
+          <div class="slide-content animate__animated animate__fadeInUp animate__delay-1s">
+            <span class="date"><i class="ri-time-line ri-lg"></i> 24 Oct , 2020 </span>
+            <h1>Long-term policies and programs are needed to fight disasters: Ram Bahadur Thapa / Home Minister,
+              Government of Nepal
+            </h1>
+            <a href="" class="btn btn-custom">Read Full Story <i class="ri-arrow-right-s-line"></i> </a>
+          </div>
+        </div>
+      </div>
 
-    <script src="index.js"></script>
-  </body>
+    </div>
+  </section>
+  <section class="official-bearers">
+    <div class="container">
+      <div class="heading">
+        <h1>Official Bearers</h1>
+      </div>
+      <div class="official-slider">
+        <div class="official">
+          <div class="card">
+            <img src="./assets/officials/kp-sharma.png" alt="PM">
+            <div class="official-title">
+              <span>Prime Minister</span>
+              <h5>K.P Sharma Oli</h5>
+            </div>
+          </div>
+        </div>
+        <div class="official">
+          <div class="card">
+            <img src="./assets/officials/badal.png" alt="PM">
+            <div class="official-title">
+              <span>Home Minister</span>
+              <h5>Ram Bahadur Thapa (Badal)</h5>
+            </div>
+          </div>
+        </div>
+        <div class="official">
+          <div class="card">
+            <img src="./assets/officials/anil.png" alt="PM">
+            <div class="official-title">
+              <span>Executive Director</span>
+              <h5>Anil Pokherel</h5>
+            </div>
+          </div>
+        </div>
+        <div class="official">
+          <div class="card">
+            <img src="./assets/officials/janardan.png" alt="PM">
+            <div class="official-title">
+              <span>Spokesperson / Information Officer</span>
+              <h5>Janardan Gautam</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="multi-purpose">
+    <div class="tabs">
+      <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="news-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news"
+            aria-selected="true">Recent News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="bulletin-tab" data-toggle="tab" href="#bulletin" role="tab" aria-controls="bulletin"
+            aria-selected="false">Daily Bulletin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="directory-tab" data-toggle="tab" href="#directory" role="tab"
+            aria-controls="directory" aria-selected="false">Directory / Procedure</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="downloads-tab" data-toggle="tab" href="#downloads" role="tab"
+            aria-controls="downloads" aria-selected="false">Downloads</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="news" role="tabpanel" aria-labelledby="news-tab">
+          <div class="news">
+            <div class="row">
+              <div class="col-md-6">
+                <a href="">
+                  <div class="card">
+                    <img src="./assets/news1.png" alt="">
+                    <div class="news-content">
+                      <span class="date"><i class="ri-time-line ri-lg"></i> 24 Oct , 2020 </span>
+                      <h4>Procedures are being developed to rehabilitate those affected by the earthquake as well as
+                        those
+                        affected by the disaster</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="">
+                  <div class="card d-flex justify-content-center">
+                    <div class="small-image">
+                      <img src="./assets/news1.png" alt="">
+                    </div>
+                    <div class="small-content news-content">
+                      <span class="date"><i class="ri-time-line ri-lg"></i> 24 Oct , 2020 </span>
+                      <h4>Procedures are being developed to rehabilitate those affected by the earthquake as well as
+                        those
+                        affected by the disaster</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="bulletin" role="tabpanel" aria-labelledby="bulletin-tab">...</div>
+        <div class="tab-pane fade" id="directory" role="tabpanel" aria-labelledby="directory-tab">...</div>
+        <div class="tab-pane fade" id="downloads" role="tabpanel" aria-labelledby="downloads-tab">...</div>
+      </div>
+    </div>
+  </section>
+  <script src="index.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.banner-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        fade: true,
+        cssEase: 'linear',
+        infinite: true
+      });
+      $('.official-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: true
+      });
+    });
+
+  </script>
+</body>
+
 </html>

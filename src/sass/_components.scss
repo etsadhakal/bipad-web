@@ -1,3 +1,50 @@
 .pt-20 {
   padding-top: 20px;
 }
+
+.switch-field {
+	display: flex;
+	overflow: hidden;
+	margin-top: -5px;
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+  overflow: hidden;
+ 
+}
+
+.switch-field label {
+	color: $black;
+	font-size: 0.9rem;
+	line-height: 1;
+	text-align: center;
+	padding: 3px 10px;
+	border: 2px solid $black;
+  transition: all 0.1s ease-in-out;
+  background: $white-color;
+  font-weight: $semibold;
+  margin-bottom: 0px !important;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+	background-color: $black !important;
+  box-shadow: none;
+  color: $white-color;
+}
+
+.switch-field label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}

@@ -1,3 +1,4 @@
+
 html,
 body {
   margin: 0;
@@ -17,9 +18,7 @@ body {
   overflow-x: hidden;
   line-height: 1.3;
   width: 100%;
-  color: $white;
-  background: $black;
-  font-family: $montserrat;
+  font-family: $defaultFont;
 }
 
 ol,
@@ -30,8 +29,10 @@ ul {
 }
 
 a {
+  transition: all 0.3s;
   &:hover {
     text-decoration: none;
+    transition: all 0.3s;
   }
 }
 
@@ -54,4 +55,43 @@ button:focus {
 
 p {
   margin: 0px 0px 15px;
+}
+@media (min-width: 1200px){
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1420px;
+}
+
+}
+
+.btn{
+  font-size: $light;
+  letter-spacing: 0.5px;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 15px 30px;
+  transition: all 0.8s;
+  font-size: 1.1rem;
+  &:hover{
+    transition: all 0.8s;
+  }
+}
+
+.btn-custom{
+  background: $primary-blue;
+  color: $white;
+
+  border: none;
+  i{
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+  &:hover{
+    background: line;
+    color: $white-color;
+   background: lighten($primary-blue, 10);
+    border: none;
+  }
+}
+.slick-slider{
+  margin-bottom: 0px !important;
 }
