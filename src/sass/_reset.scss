@@ -71,6 +71,10 @@ p {
   padding: 15px 30px;
   transition: all 0.8s;
   font-size: 1.1rem;
+  i{
+    vertical-align: middle;
+    margin-left: 10px;
+  }
   &:hover{
     transition: all 0.8s;
   }
@@ -79,17 +83,22 @@ p {
 .btn-custom{
   background: $primary-blue;
   color: $white;
-
   border: none;
-  i{
-    vertical-align: middle;
-    margin-left: 10px;
-  }
+  
   &:hover{
     background: line;
     color: $white-color;
    background: lighten($primary-blue, 10);
     border: none;
+  }
+}
+
+.btn-custom-outline{
+  border: 1px solid $primary-blue;
+  color: $primary-blue;
+  &:hover{
+    @extend .btn-custom;
+    border: 1px solid $primary-blue;
   }
 }
 .slick-slider{

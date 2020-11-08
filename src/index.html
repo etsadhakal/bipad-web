@@ -11,6 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
@@ -247,19 +248,54 @@
               </div>
               <div class="col-md-6">
                 <a href="">
-                  <div class="card d-flex justify-content-center">
-                    <div class="small-image">
-                      <img src="./assets/news1.png" alt="">
+                  <div class="card small-card d-flex justify-content-center">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img src="./assets/news1.png" alt="">
+                      </div>
+                      <div class="col-md-9">
+                        <div class="news-content">
+                          <span class="date"><i class="ri-time-line ri-lg"></i> 24 Oct , 2020 </span>
+                          <h5>One of the ways to reduce land erosion due to floods is to cut bamboo</h5>
+                        </div>
+                      </div>
                     </div>
-                    <div class="small-content news-content">
-                      <span class="date"><i class="ri-time-line ri-lg"></i> 24 Oct , 2020 </span>
-                      <h4>Procedures are being developed to rehabilitate those affected by the earthquake as well as
-                        those
-                        affected by the disaster</h4>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="card small-card d-flex justify-content-center">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img src="./assets/news1.png" alt="">
+                      </div>
+                      <div class="col-md-9">
+                        <div class="news-content">
+                          <span class="date"><i class="ri-time-line ri-lg"></i> 24 Oct , 2020 </span>
+                          <h5>One of the ways to reduce land erosion due to floods is to cut bamboo</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="card small-card d-flex justify-content-center">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img src="./assets/news1.png" alt="">
+                      </div>
+                      <div class="col-md-9">
+                        <div class="news-content">
+                          <span class="date"><i class="ri-time-line ri-lg"></i> 24 Oct , 2020 </span>
+                          <h5>One of the ways to reduce land erosion due to floods is to cut bamboo</h5>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </a>
               </div>
+            </div>
+            <div class="action">
+              <a href="" class="btn btn-custom-outline">See All News <i class="ri-arrow-right-s-line"></i> </a>
             </div>
           </div>
         </div>
@@ -269,6 +305,343 @@
       </div>
     </div>
   </section>
+  <section class="e-portal">
+    <div class="d-flex justify-content-between">
+      <div class="sec-accordion">
+        <div class="container">
+          <div class="heading">
+            <h2>E-Portals</h2>
+          </div>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link  collapsed" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Non-Natural Disasters <i class="ri-arrow-down-s-line ri float-right"></i>
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    Natural Disasters <i class="ri-arrow-down-s-line ri float-right"></i>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="form-group custom-radio">
+                    <input type="radio" id="flood" name="natural-disaster">
+                    <label for="flood" data-toggle="tooltip" data-placement="top" title="Flood"> <i
+                        class="flood ri-flood-fill ri-lg"></i></label>
+                    <input type="radio" id="earthquake" name="natural-disaster" checked>
+                    <label for="earthquake" data-toggle="tooltip" data-placement="top" title="earthquake"> <i
+                        class="earthquake ri-earthquake-fill ri-lg"></i></label>
+                    <input type="radio" id="wildfire" name="natural-disaster">
+                    <label for="wildfire" data-toggle="tooltip" data-placement="top" title="Wildfire"> <i
+                        class="wildfire ri-fire-fill ri-lg"></i></label>
+                    <input type="radio" id="rainfall" name="natural-disaster">
+                    <label for="rainfall" data-toggle="tooltip" data-placement="top" title="Heavy Rainfall"> <i
+                        class="rainfall ri-heavy-showers-fill ri-lg"></i></label>
+                    <input type="radio" id="snowfall" name="natural-disaster">
+                    <label for="snowfall" data-toggle="tooltip" data-placement="top" title="Heavy Snowfall"> <i
+                        class="snow ri-snowy-fill ri-lg"></i></label>
+                    <input type="radio" id="lightining" name="natural-disaster">
+                    <label for="lightining" data-toggle="tooltip" data-placement="top" title="Heavy Lightining"> <i
+                        class="lightining ri-thunderstorms-fill ri-lg"></i></label>
+                    <input type="radio" id="hailstrome" name="natural-disaster">
+                    <label for="hailstrome" data-toggle="tooltip" data-placement="top" title="Hailstrome"> <i
+                        class="hailstrom ri-hail-fill ri-lg"></i></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="map-box">
+        <div class="map-container" id="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3072998.8219103897!2d83.83444456880768!3d27.971936322153482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1604825764179!5m2!1sen!2snp"
+            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="eportal-divisions">
+    <div class="d-flex justify-content-center">
+      <div class="anchor">
+        <a href="">
+          <i class="icon ri-chat-1-fill"></i>
+          <span>NPDRR</span>
+          <i class=" external ri-external-link-line"></i>
+        </a>
+      </div>
+      <div class="anchor">
+        <a href="">
+          <i class="icon ri-mail-open-fill"></i>
+          <span>Webmail</span>
+          <i class=" external ri-external-link-line"></i>
+        </a>
+      </div>
+      <div class="anchor">
+        <a href="">
+          <i class="icon ri-earthquake-fill"></i>
+          <span>Bipad Portal</span>
+          <i class=" external ri-external-link-line"></i>
+        </a>
+      </div>
+      <div class="anchor">
+        <a href="">
+          <i class="icon ri-virus-line"></i>
+          <span>Covid-19 Monitor</span>
+          <i class=" external ri-external-link-line"></i>
+        </a>
+      </div>
+      <div class="anchor">
+        <a href="">
+          <i class="icon ri-information-fill"></i>
+          <span>DRR</span>
+          <i class=" external ri-external-link-line"></i>
+        </a>
+      </div>
+      <div class="anchor">
+        <a href="">
+          <i class="icon ri-feedback-fill"></i>
+          <span>Feedback</span>
+          <i class=" external ri-external-link-line"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="gallery">
+    <div class="container">
+      <div class="heading">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Video gallery</h2>
+          </div>
+          <div class="col-md-6 text-right">
+            <a href="">See All Gallery <i class="ri-arrow-right-s-line"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="videos-slider">
+        <div class="video-card">
+          <div class="card">
+            <iframe width="100%" height="400"
+              src="https://www.youtube.com/embed/G-UDc7g75aA?list=PLewBQDjBvyaIfx2ZmJ5TdKAY3plYGpNXL" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <div class="video-title">
+              <h5>Disaster Authority Executive Chief Anil Pokharel's on-site report on the landslide</h5>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="card">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/o9VcbBxqIT8" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <div class="video-title">
+              <h5>Sister & brother-in-law's advice to avoid flooding may also work for you. Let's watch this video.</h5>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="card">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/zZf0EgEZp-o" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <div class="video-title">
+              <h5>Let's be concerned about landslides, be vigilant, be safe ...
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="real-time">
+    <div class="container">
+      <div class="real-time-wrapper">
+        <h3>Real Time Warning</h3>
+        <div class="list-group">
+          <div class="list-group-item">
+            <div class="d-flex">
+              <div class="icon">
+                <i class="ri-flood-fill ri-3x"></i>
+              </div>
+              <div class="title">
+                <h5>Flood at Sukla Gandaki , Raipur (State 3) </h5>
+                <span>Updated 09/20 at 5:30 AM</span>
+              </div>
+            </div>
+          </div>
+          <div class="list-group-item">
+            <div class="d-flex">
+              <div class="icon">
+                <i class="ri-earthquake-fill ri-3x"></i>
+              </div>
+              <div class="title">
+                <h5>Earthquake hits on Bajura , Gotikhel (State 7) </h5>
+                <span>Updated 09/20 at 5:30 AM</span>
+              </div>
+            </div>
+          </div>
+          <div class="list-group-item">
+            <div class="d-flex">
+              <div class="icon">
+                <i class="ri-hail-fill ri-3x"></i>
+              </div>
+              <div class="title">
+                <h5>Heavy hailstrome at Pokhara , Sarankot (State 3) </h5>
+                <span>Updated 09/20 at 5:30 AM</span>
+              </div>
+            </div>
+          </div>
+          <div class="list-group-item">
+            <div class="d-flex">
+              <div class="icon">
+                <i class="ri-thunderstorms-fill ri-3x"></i>
+              </div>
+              <div class="title">
+                <h5>Heavy lightining at Kusma , Baglung (State 3) </h5>
+                <span>Updated 09/20 at 5:30 AM</span>
+              </div>
+            </div>
+          </div>
+          <a href=""> See all in Bipad Portal <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="social">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="social-inner">
+            <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/NDRRMA/" data-tabs="timeline"
+              data-width="" data-height="" data-small-header="true" data-adapt-container-width="true"
+              data-hide-cover="true" data-show-facepile="true" fb-xfbml-state="rendered"
+              fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=105148760327919&amp;container_width=425&amp;hide_cover=true&amp;href=https%3A%2F%2Fwww.facebook.com%2FNDRRMA%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=timeline&amp;width=500">
+              <span style="vertical-align: bottom; width: 100%; height: 500px;"><iframe name="f3b6aaead7c6684"
+                  width="500px" height="1000px" data-testid="fb:page Facebook Social Plugin"
+                  title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true"
+                  scrolling="no" allow="encrypted-media"
+                  src="https://www.facebook.com/v7.0/plugins/page.php?adapt_container_width=true&amp;app_id=105148760327919&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df37c092b91fa1ec%26domain%3Dbipad.gov.np%26origin%3Dhttps%253A%252F%252Fbipad.gov.np%252Ff1a1419b03cd488%26relation%3Dparent.parent&amp;container_width=425&amp;hide_cover=true&amp;href=https%3A%2F%2Fwww.facebook.com%2FNDRRMA%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=timeline&amp;width=500"
+                  style="border: none; visibility: visible; width: 425px; height: 500px;" class=""></iframe></span>
+            </div>
+            <div class="heading">
+              <div class="d-flex">
+                <div class="icon">
+                  <i class="ri-facebook-box-fill ri-4x facebook"></i>
+                </div>
+                <div class="join-text">
+                  <h4> Join Our Facebook Community</h4>
+                  <a href="">Go to Facebook page <i class="ri-external-link-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer-wrapper">
+    <div class="top-footer">
+      <div class="container">
+        <div class="footer-container d-flex justify-content-between">
+          <div class="footer-item">
+            <div class="_title">
+              <h4>Useful Resources</h4>
+            </div>
+            <div class="_content">
+              <ul>
+                <li>
+                  <a href="https://bipad.gov.np/uploads/publications/विपद्_जोखिम_न्यूनीकरण_तथा_व्यवस्थापन_राष्ट्रिय_परिषद्_को_मिति_२०७७।०३।२७_गते_बसेको_चौंथो.pdf"
+                    download="">
+                    The fourth meeting of the National Council for Disaster Risk Reduction and Management was held on
+                    2077-03-27</a>
+                </li>
+                <li>
+                  <a href="https://bipad.gov.np/uploads/publications/राष्ट्रिय_विपद्_जोखिम_न्यूनीकरण_तथा_व्यवस्थापन_कार्यकारी_समितिको_मिति_२०७७।०३।०५_गते_बस.pdf"
+                    download="">
+                    Date of the National Disaster Risk Reduction and Management Executive Committee on 2077-03-05</a>
+                </li>
+                <li>
+                  <a href="https://bipad.gov.np/uploads/publications/राष्ट्रिय_विपद्_जोखिम_न्यूनीकरण_तथा_व्यवस्थापन_कार्यकारी_समितिको_मिति_२०७७।०६।२०_गते_बस.pdf"
+                    download="">
+                    The fourth meeting of the National Council for Disaster Risk Reduction and Management was held on
+                    2077-03-27</a>
+                </li>
+                <li>
+                  <a href="https://bipad.gov.np/uploads/publications/विपद्_जोखिम_न्यूनीकरण_तथा_व्यवस्थापन_राष्ट्रिय_परिषद्_को_मिति_२०७६।०१।२२_गते_बसेको_चौंथो.pdf"
+                    download="">
+                    Date of the National Disaster Risk Reduction and Management Executive Committee on 2077-03-05</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-item">
+            <div class="_title">
+              <h4>Useful Links</h4>
+            </div>
+            <div class="_content">
+              <ul>
+                <ul>
+                  <li><a href="https://www.opmcm.gov.np" target="_blank">Office of the Prime Minister and council of
+                      ministers</a></li>
+                  <li><a href="https://www.moha.gov.np" target="_blank">Home Ministry</a></li>
+                  <li><a href="https://www.mofa.gov.np" target="_blank">Ministry of foreign affairs</a></li>
+                  <li><a href="https://www.oagnep.gov.np" target="_blank">Office of auditor general</a></li>
+                  <li><a href="https://mdsa.bipad.gov.np/">Monitor for Disaster Strategic Action plans</a></li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-item">
+            <div class="_title">
+              <h4>Contact Detail</h4>
+            </div>
+            <div class="_content">
+              <ul>
+                <ul>
+                  <li><strong>National Disaster Risk Reduction and Management Authority</strong></li>
+                  <li>P.O. Box no. 213213</li>
+                  <li>Telephone: +977-1-4493847, +977-1-4439485</li>
+                  <li>Email: <a href="http://info@bipad.gov.np"><u>info@bipad.gov.np</u></a></li>
+                  <li>Web Link: <a href="http://bipad.gov.np"><u>www.bipad.gov.np</u></a></li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer">
+      <div class="container">
+        <p>All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
   <script src="index.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.min.js"></script>
@@ -294,9 +667,19 @@
         autoplaySpeed: 5000,
         infinite: true
       });
+      $('.videos-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: true
+      });
     });
 
   </script>
+
 </body>
 
 </html>
