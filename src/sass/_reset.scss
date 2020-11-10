@@ -104,3 +104,24 @@ p {
 .slick-slider{
   margin-bottom: 0px !important;
 }
+
+.dropdown-menu{
+  border: none;
+  border-radius: 0px;
+  margin-top: 10px;
+  .dropdown-item{
+    padding: 15px 30px !important;
+    border-bottom: 1px solid $gray-100;
+    border-left: 3px solid transparent;
+    color: $gray-700;
+    font-weight: $medium;
+    &:hover{
+      color: $black;
+      border-left: 3px solid $primary-blue;
+      border-bottom: 1px dotted $gray-200;
+    }
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+}
