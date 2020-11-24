@@ -644,3 +644,24 @@
     }
   }
 }
+
+.list-group-item{
+  padding: 20px 0px !important;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid $gray-200;
+  .d-flex{
+    align-items: center;
+    
+  }
+  .title{
+    font-size: 1.4rem;
+    font-weight: $semibold;
+  }
+  .file-ext{
+    font-size: 1.4rem;
+  }
+  .parisad{
+    margin: 10px 0px;
+  }
+}
