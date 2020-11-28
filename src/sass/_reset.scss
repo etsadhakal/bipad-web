@@ -109,6 +109,10 @@ p {
   border: none;
   border-radius: 0px;
   margin-top: 10px;
+  -webkit-box-shadow: -8px 59px 62px 15px rgba(0,0,0,0.09);
+-moz-box-shadow: -8px 59px 62px 15px rgba(0,0,0,0.09);
+box-shadow: -8px 59px 62px 15px rgba(0,0,0,0.09);
+
   .dropdown-item{
     padding: 15px 30px !important;
     border-bottom: 1px solid $gray-100;
@@ -122,6 +126,31 @@ p {
     }
     &:last-child{
       border-bottom: none;
+    }
+  }
+}
+
+.d-flex{
+  .location{
+    width: 40%;
+    h4{
+      margin-top: 0px;
+    }
+  }
+  .name{
+    width: 60%;
+    text-align: left;
+  }
+}
+
+form{
+  .form-group{
+    .form-control{
+      border-radius: 0px;
+      border: 1px solid $gray-300;
+    }
+    input,select{
+      height: 55px;
     }
   }
 }

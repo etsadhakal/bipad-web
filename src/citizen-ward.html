@@ -27,8 +27,12 @@
         </div>
         <div class="links">
           <ul class="list-group list-group-horizontal">
-            <li class=""><a href="" class="link">Road Condition Report </a></li>
-            <li class="disaster"><a href="" class="link">Submit Disaster Report</a></li>
+            <li class=""><a
+                href="https://docs.google.com/spreadsheets/d/1ygwurvveDG52tOvx8Jc5QTvxrYaYI0ByRqTOzVHHtgE/edit#gid=0"
+                target="_blank" class="link">Road Condition Report </a></li>
+            <li class="disaster"><a href="" data-toggle="modal" data-target="#submitdisaster" class="link">Submit
+                Disaster
+                Report</a></li>
             <li class="lang switch-field">
               <input type="radio" id="radio-one" name="switch-one" value="yes" checked />
               <label for="radio-one">EN</label>
@@ -52,7 +56,7 @@
           <div class="navbar-links navbar-right">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="">Home</a>
+                <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -61,11 +65,11 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="introduction.html">Introductions</a>
-                  <a class="dropdown-item" href="">Organization Structure</a>
-                  <a class="dropdown-item" href="">Employee</a>
-                  <a class="dropdown-item" href="">Citizen Ward Profile</a>
-                  <a class="dropdown-item" href="">Rastra Parisad</a>
-                  <a class="dropdown-item" href="">Karyakari Samiti</a>
+                  <a class="dropdown-item" href="org-structure.html">Organization Structure</a>
+                  <a class="dropdown-item" href="employee.html">Employee</a>
+                  <a class="dropdown-item" href="citizen-ward.html">Citizen Ward Profile</a>
+                  <a class="dropdown-item" href="Rastra-Parisad.html">Rastra Parisad</a>
+                  <a class="dropdown-item" href="karyakari.html">Karyakari Samiti</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -74,12 +78,12 @@
                   Publications
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="">Rules & Regulation</a>
+                  <a class="dropdown-item" href="rules-regulations.html">Rules & Regulation</a>
                   <a class="dropdown-item" href="">Policies / Directory</a>
-                  <a class="dropdown-item" href="">Procedure</a>
-                  <a class="dropdown-item" href="">Articles</a>
-                  <a class="dropdown-item" href="">Report</a>
-                  <a class="dropdown-item" href="">Meeting Report</a>
+                  <a class="dropdown-item" href="procedure.html">Procedure</a>
+                  <a class="dropdown-item" href="articles.html">Articles</a>
+                  <a class="dropdown-item" href="reports.html">Report</a>
+                  <a class="dropdown-item" href="meeting-reports.html">Meeting Report</a>
                   <a class="dropdown-item" href="">Citizen Ward Profile Bulletin</a>
                 </div>
               </li>
@@ -89,19 +93,19 @@
                   Communication Center
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="">News</a>
-                  <a class="dropdown-item" href="">Press Notes</a>
-                  <a class="dropdown-item" href="">Bulletin</a>
-                  <a class="dropdown-item" href="">SnakeBite Treatment</a>
-                  <a class="dropdown-item" href="">Gallery</a>
+                  <a class="dropdown-item" href="news.html">News</a>
+                  <a class="dropdown-item" href="press-note.html">Press Notes</a>
+                  <a class="dropdown-item" href="bulletin.html">Bulletin</a>
+                  <a class="dropdown-item" href="snake-bite.html">SnakeBite Treatment</a>
+                  <a class="dropdown-item" href="gallery.html">Gallery</a>
 
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">FAQ</a>
+                <a class="nav-link" href="faq.html">FAQ</a>
               </li>
 
             </ul>
@@ -388,5 +392,84 @@
   </script>
 
 </body>
+<div class="form-modal modal fade" id="submitdisaster" tabindex="-1" role="dialog"
+  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Submit Disaster Report</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="fields row">
+            <div class="form-group col-md-6">
+              <label>Reported By</label>
+              <input type="text" name="reported_by" required="" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+              <label>Contact No</label>
+              <input type="text" name="contact_no" required="" class="form-control">
+            </div>
+            <div class="form-group col-md-12">
+              <label>Email</label>
+              <input type="email" name="email" required="" class="form-control">
+            </div>
+            <div class="form-group col-md-12">
+              <label>Title</label>
+              <input type="text" name="title" required="" class="form-control">
+            </div>
+            <div class="form-group col-md-12">
+              <label>Provience</label>
+              <select name="province" required="" id="report_province" class="form-control">
+                <option value="">--select province--</option>
+                <option value="1">Province No. 1</option>
+                <option value="2">Province No. 2</option>
+                <option value="3">Province No. 3</option>
+                <option value="4">Province No. 4</option>
+                <option value="5">Province No. 5</option>
+                <option value="6">Province No. 6</option>
+                <option value="7">Province No. 7</option>
+              </select>
+            </div>
+            <div class="form-group col-md-12">
+              <label>District</label>
+              <select name="district" required="" id="report_district" class="form-control" class="form-control">
+                <option value="">--select district--</option>
+              </select>
+            </div>
+            <div class="form-group col-md-12">
+              <label>Mun/Vdc</label>
+              <select name="mun_vdc" required="" id="report_mnu_vdc" class="form-control">
+                <option value="">--select mun_vdc--</option>
+              </select>
+            </div>
+            <div class="form-group col-md-12">
+              <label>Location</label>
+              <input type="text" name="location" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+              <label>Image</label>
+              <input type="file" name="image" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+              <label>Video</label>
+              <input type="file" name="video" class="form-control">
+            </div>
+            <div class="form-group col-md-12">
+              <label>Description</label>
+              <textarea name="description0" class="form-control" rows="7"></textarea>
+            </div>
+            <div class="form-group col-md-12">
+              <button class="btn btn-custom"> Submit Disaster Report</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 </html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Bipad-Website</title>
+  <!-- scss file will be replaced with bundled css -->
+  <link href="sass/main.scss" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+  <!-- navabr -->
+  <div id="navbar" class="custom-navbar fixed-top">
+    <nav class="navbar top navbar-expand-lg top-fixed navbar-light">
+      <div class="d-flex justify-content-between container">
+        <div class="mail">
+          <a href="mailto:info@bipad.gov.np" target="_blank">
+            <i class="ri-mail-fill"></i>
+            <span>info@bipad.gov.np</span>
+          </a>
+        </div>
+        <div class="links">
+          <ul class="list-group list-group-horizontal">
+            <li class=""><a
+                href="https://docs.google.com/spreadsheets/d/1ygwurvveDG52tOvx8Jc5QTvxrYaYI0ByRqTOzVHHtgE/edit#gid=0"
+                target="_blank" class="link">Road Condition Report </a></li>
+            <li class="disaster"><a href="" data-toggle="modal" data-target="#submitdisaster" class="link">Submit
+                Disaster
+                Report</a></li>
+            <li class="lang switch-field">
+              <input type="radio" id="radio-one" name="switch-one" value="yes" checked />
+              <label for="radio-one">EN</label>
+              <input type="radio" id="radio-two" name="switch-one" value="no" />
+              <label for="radio-two">NE</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navs navbar navbar-expand-lg top-fixed navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html"><img src="./assets/logo.svg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+          </ul>
+          <div class="navbar-links navbar-right">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  About Us
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="introduction.html">Introductions</a>
+                  <a class="dropdown-item" href="org-structure.html">Organization Structure</a>
+                  <a class="dropdown-item" href="employee.html">Employee</a>
+                  <a class="dropdown-item" href="citizen-ward.html">Citizen Ward Profile</a>
+                  <a class="dropdown-item" href="Rastra-Parisad.html">Rastra Parisad</a>
+                  <a class="dropdown-item" href="karyakari.html">Karyakari Samiti</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Publications
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="rules-regulations.html">Rules & Regulation</a>
+                  <a class="dropdown-item" href="">Policies / Directory</a>
+                  <a class="dropdown-item" href="procedure.html">Procedure</a>
+                  <a class="dropdown-item" href="articles.html">Articles</a>
+                  <a class="dropdown-item" href="reports.html">Report</a>
+                  <a class="dropdown-item" href="meeting-reports.html">Meeting Report</a>
+                  <a class="dropdown-item" href="">Citizen Ward Profile Bulletin</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Communication Center
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="news.html">News</a>
+                  <a class="dropdown-item" href="press-note.html">Press Notes</a>
+                  <a class="dropdown-item" href="bulletin.html">Bulletin</a>
+                  <a class="dropdown-item" href="snake-bite.html">SnakeBite Treatment</a>
+                  <a class="dropdown-item" href="gallery.html">Gallery</a>
+
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-news-update">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div class="update-block">
+            <span><i class="ri-flag-2-fill"></i>
+              Bipad Updates</span>
+          </div>
+          <marquee onMouseOver="this.stop()" onMouseOut="this.start()">
+            <span>
+              <a href="">1155 to find out about rains and floods and 1149 to ask for help for rescue
+              </a>
+            </span>
+            <span>
+              <a href="">One of the ways to reduce land erosion due to floods is to cut bamboo
+              </a>
+            </span>
+            <span>
+              <a href="">1155 to find out about rains and floods and 1149 to ask for help for rescue
+              </a>
+            </span>
+          </marquee>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="inner-page">
+    <section class="intro">
+      <div class="container">
+        <div class="intro-wrapper">
+          <div class="row">
+            <div class="col-md-12">
+
+              <div class="content">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.62385220826!2d85.32170481474881!3d27.698018332509385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a5a17cf095%3A0xae7d89f50454f655!2sSingha%20Durbar!5e0!3m2!1sen!2snp!4v1606555088048!5m2!1sen!2snp"
+                  width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                  tabindex="0"></iframe>
+                <div class="row">
+                  <div class="col-md-10 offset-md-1">
+                    <div class="row">
+                      <div class="col-md-6 contact-form">
+                        <div class="heading">
+                          <h3 class="primary-blue">Contact Us
+                          </h3>
+                        </div>
+                        <form action="">
+                          <div class="form-group">
+                            <label for="">Full Name</label>
+                            <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group">
+                            <label for="">Email Address</label>
+                            <input type="email" class="form-control">
+                          </div>
+                          <div class="form-group">
+                            <label for="">Leave Message / Suggestion</label>
+                            <textarea name="" id="" cols="30" rows="7" class="form-control"></textarea>
+                          </div>
+                          <div class="form-group">
+                            <button class="btn btn-custom ">Submit</button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="contact-location">
+                          <ul class="list-unstyled">
+                            <li><strong>National Disaster Risk Reduction and Management Authority</strong></li>
+                            <li>P.O. Box no. 213213</li>
+                            <li>Telephone: +977-1-4493847, +977-1-4439485</li>
+                            <li>Email: <a href="http://info@bipad.gov.np"><u>info@bipad.gov.np</u></a></li>
+                            <li>Web Link: <a href="http://bipad.gov.np"><u>www.bipad.gov.np</u></a></li>
+                          </ul>
+                          <hr>
+                          <ul class="list-inline social-links">
+                            <li>
+                              <a href="" target="_blank">
+                                <i class="ri-facebook-box-fill ri-2x"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="" target="_blank">
+                                <i class="ri-twitter-fill ri-2x"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="official-bearers">
+      <div class="container">
+        <div class="heading">
+          <h3>Official Bearers</h3>
+        </div>
+        <div class="official-slider">
+          <div class="official">
+            <div class="card">
+              <img src="./assets/officials/kp-sharma.png" alt="PM">
+              <div class="official-title">
+                <span>Prime Minister</span>
+                <h5>K.P Sharma Oli</h5>
+              </div>
+            </div>
+          </div>
+          <div class="official">
+            <div class="card">
+              <img src="./assets/officials/badal.png" alt="PM">
+              <div class="official-title">
+                <span>Home Minister</span>
+                <h5>Ram Bahadur Thapa (Badal)</h5>
+              </div>
+            </div>
+          </div>
+          <div class="official">
+            <div class="card">
+              <img src="./assets/officials/anil.png" alt="PM">
+              <div class="official-title">
+                <span>Executive Director</span>
+                <h5>Anil Pokherel</h5>
+              </div>
+            </div>
+          </div>
+          <div class="official">
+            <div class="card">
+              <img src="./assets/officials/janardan.png" alt="PM">
+              <div class="official-title">
+                <span>Spokesperson / Information Officer</span>
+                <h5>Janardan Gautam</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="upcoming-events">
+      <div class="container">
+        <div class="heading">
+          <h3 class="">Upcoming Events</h3>
+        </div>
+        <div class="events-slider">
+          <div class="event">
+            <div class="d-flex">
+              <div class="date text-center">
+                <span>13</span>
+                <p>OCT</p>
+              </div>
+              <div class="title">
+                <h6>Honorable Prime Minister K.P. Inauguration program of the International Day for Disaster Risk
+                  Reduction hosted by Sharma Oliju.
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="d-flex">
+              <div class="date text-center">
+                <span>13</span>
+                <p>OCT</p>
+              </div>
+              <div class="title">
+                <h6>Honorable Prime Minister K.P. Inauguration program of the International Day for Disaster Risk
+                  Reduction hosted by Sharma Oliju.
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="d-flex">
+              <div class="date text-center">
+                <span>13</span>
+                <p>OCT</p>
+              </div>
+              <div class="title">
+                <h6>Honorable Prime Minister K.P. Inauguration program of the International Day for Disaster Risk
+                  Reduction hosted by Sharma Oliju.
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer-wrapper">
+      <div class="top-footer">
+        <div class="container">
+          <div class="footer-container d-flex justify-content-between">
+            <div class="footer-item">
+              <div class="_title">
+                <h4>Useful Resources</h4>
+              </div>
+              <div class="_content">
+                <ul>
+                  <li>
+                    <a href="https://bipad.gov.np/uploads/publications/विपद्_जोखिम_न्यूनीकरण_तथा_व्यवस्थापन_राष्ट्रिय_परिषद्_को_मिति_२०७७।०३।२७_गते_बसेको_चौंथो.pdf"
+                      download="">
+                      The fourth meeting of the National Council for Disaster Risk Reduction and Management was held on
+                      2077-03-27</a>
+                  </li>
+                  <li>
+                    <a href="https://bipad.gov.np/uploads/publications/राष्ट्रिय_विपद्_जोखिम_न्यूनीकरण_तथा_व्यवस्थापन_कार्यकारी_समितिको_मिति_२०७७।०३।०५_गते_बस.pdf"
+                      download="">
+                      Date of the National Disaster Risk Reduction and Management Executive Committee on 2077-03-05</a>
+                  </li>
+                  <li>
+                    <a href="https://bipad.gov.np/uploads/publications/राष्ट्रिय_विपद्_जोखिम_न्यूनीकरण_तथा_व्यवस्थापन_कार्यकारी_समितिको_मिति_२०७७।०६।२०_गते_बस.pdf"
+                      download="">
+                      The fourth meeting of the National Council for Disaster Risk Reduction and Management was held on
+                      2077-03-27</a>
+                  </li>
+                  <li>
+                    <a href="https://bipad.gov.np/uploads/publications/विपद्_जोखिम_न्यूनीकरण_तथा_व्यवस्थापन_राष्ट्रिय_परिषद्_को_मिति_२०७६।०१।२२_गते_बसेको_चौंथो.pdf"
+                      download="">
+                      Date of the National Disaster Risk Reduction and Management Executive Committee on 2077-03-05</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-item">
+              <div class="_title">
+                <h4>Useful Links</h4>
+              </div>
+              <div class="_content">
+                <ul>
+                  <ul>
+                    <li><a href="https://www.opmcm.gov.np" target="_blank">Office of the Prime Minister and council of
+                        ministers</a></li>
+                    <li><a href="https://www.moha.gov.np" target="_blank">Home Ministry</a></li>
+                    <li><a href="https://www.mofa.gov.np" target="_blank">Ministry of foreign affairs</a></li>
+                    <li><a href="https://www.oagnep.gov.np" target="_blank">Office of auditor general</a></li>
+                    <li><a href="https://mdsa.bipad.gov.np/">Monitor for Disaster Strategic Action plans</a></li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-item">
+              <div class="_title">
+                <h4>Contact Detail</h4>
+              </div>
+              <div class="_content">
+                <ul>
+                  <ul>
+                    <li><strong>National Disaster Risk Reduction and Management Authority</strong></li>
+                    <li>P.O. Box no. 213213</li>
+                    <li>Telephone: +977-1-4493847, +977-1-4439485</li>
+                    <li>Email: <a href="http://info@bipad.gov.np"><u>info@bipad.gov.np</u></a></li>
+                    <li>Web Link: <a href="http://bipad.gov.np"><u>www.bipad.gov.np</u></a></li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="container">
+          <p>All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="index.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.official-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: true
+      });
+      $('.events-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: true
+      });
+    });
+
+  </script>
+
+</body>
+<div class="form-modal modal fade" id="submitdisaster" tabindex="-1" role="dialog"
+  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Submit Disaster Report</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="fields row">
+            <div class="form-group col-md-6">
+              <label>Reported By</label>
+              <input type="text" name="reported_by" required="" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+              <label>Contact No</label>
+              <input type="text" name="contact_no" required="" class="form-control">
+            </div>
+            <div class="form-group col-md-12">
+              <label>Email</label>
+              <input type="email" name="email" required="" class="form-control">
+            </div>
+            <div class="form-group col-md-12">
+              <label>Title</label>
+              <input type="text" name="title" required="" class="form-control">
+            </div>
+            <div class="form-group col-md-12">
+              <label>Provience</label>
+              <select name="province" required="" id="report_province" class="form-control">
+                <option value="">--select province--</option>
+                <option value="1">Province No. 1</option>
+                <option value="2">Province No. 2</option>
+                <option value="3">Province No. 3</option>
+                <option value="4">Province No. 4</option>
+                <option value="5">Province No. 5</option>
+                <option value="6">Province No. 6</option>
+                <option value="7">Province No. 7</option>
+              </select>
+            </div>
+            <div class="form-group col-md-12">
+              <label>District</label>
+              <select name="district" required="" id="report_district" class="form-control" class="form-control">
+                <option value="">--select district--</option>
+              </select>
+            </div>
+            <div class="form-group col-md-12">
+              <label>Mun/Vdc</label>
+              <select name="mun_vdc" required="" id="report_mnu_vdc" class="form-control">
+                <option value="">--select mun_vdc--</option>
+              </select>
+            </div>
+            <div class="form-group col-md-12">
+              <label>Location</label>
+              <input type="text" name="location" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+              <label>Image</label>
+              <input type="file" name="image" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+              <label>Video</label>
+              <input type="file" name="video" class="form-control">
+            </div>
+            <div class="form-group col-md-12">
+              <label>Description</label>
+              <textarea name="description0" class="form-control" rows="7"></textarea>
+            </div>
+            <div class="form-group col-md-12">
+              <button class="btn btn-custom"> Submit Disaster Report</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</html>
