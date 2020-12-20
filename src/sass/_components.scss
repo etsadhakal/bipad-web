@@ -19,12 +19,12 @@
 }
 
 .switch-field label {
-	color: $black;
+	color: $primary-blue;
 	font-size: 0.9rem;
 	line-height: 1;
 	text-align: center;
 	padding: 3px 10px;
-	border: 2px solid $black;
+	border: 2px solid $primary-blue;
   transition: all 0.1s ease-in-out;
   background: $white-color;
   font-weight: $semibold;
@@ -36,7 +36,7 @@
 }
 
 .switch-field input:checked + label {
-	background-color: $black !important;
+	background-color: $primary-blue !important;
   box-shadow: none;
   color: $white-color;
 }

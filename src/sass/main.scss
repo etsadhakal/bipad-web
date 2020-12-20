@@ -893,3 +893,26 @@ a{
     padding: 40px;
   }
 }
+
+.news-inner{
+  .news-content{
+    .news-small{
+      img{
+        height: 240px;
+      object-fit: cover;
+      }
+    }
+  }
+}
+
+.bulletin-inner{
+  .bulletin{
+    text-align: center;
+    display: block;
+    align-items: center;
+    width: 100%;
+    img{
+      height: 720px !important;
+    }
+  }
+}
