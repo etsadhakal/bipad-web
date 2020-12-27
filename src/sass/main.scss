@@ -146,12 +146,11 @@
 }
 
 .official-bearers{
-  background: $gray-100;
+  padding: 20px 0px;
   .heading{
-    padding-top: 80px;
+    padding-top: 40px;
   }
   .official-slider{
-    padding: 30px 0px 80px 0px;
     .card{
       border: 1px solid $gray-200;
       border-radius: 0px;
@@ -160,13 +159,14 @@
         object-fit: cover;
       }
       .official-title{
-        padding: 30px 30px;
+        padding: 15px 30px;
         span{
           color: $gray-600;
         }
         h5{
           margin-bottom: 0px;
           margin-top: 5px;
+          font-size: 1.1rem;
         }
 
       }
@@ -191,7 +191,7 @@
 }
 
 .multi-purpose{
-  background: $gray-100;
+
   padding: 20px 0px;
   .tabs{
     li{
@@ -221,7 +221,7 @@
     }
   }
   .tab-content{
-    margin: 60px 0px;
+    margin: 60px 0px 0px 0px;
     .news{
       a{
         .card{
@@ -465,9 +465,8 @@
     background: $white-color;
     padding: 45px;
     .list-group{
-      margin-top: 30px;
+      margin: 20px 0px;
       .list-group-item{
-        margin-bottom: 20px;
         border-radius: 0px;
         border: none;
         border-bottom: 1px solid $gray-200;
@@ -479,7 +478,10 @@
         .title{
           h5{
             margin-bottom: 5px;
-            margin-top: 5px;
+            font-weight: $regular;
+          }
+          span{
+            font-size: 0.95rem;
           }
         }
       }
@@ -495,19 +497,29 @@
 
 .social{
   border-top: 1px solid $gray-100;
-  padding: 80px 0px;
+  padding: 40px 0px;
+  background: $gray-100;
   .social-inner{
     padding: 0px 30px;
+    #twitter-widget-0{
+      border: 1px solid $gray-200 !important;
+    }
     .heading{
       margin-top: 20px;
       .icon{
         .facebook{
           color: #3b5998;
         }
+        .twitter{
+          color:  #00acee ;
+        }
       }
       .join-text{
         margin-top: 16px;
         margin-left: 20px;
+        h4{
+          font-size: 1.2rem;
+        }
         a{
           display: block;
           vertical-align: middle;
@@ -592,10 +604,33 @@
 }
 
 .upcoming-events{
-  background: lighten($gray-200, 4);
-  padding: 60px 100px 100px 100px;
+  background: $white-color;
+  padding: 10px 0px 10px 0px;
+  .events-wrapper{
+    position: relative;
+    .headline{
+      position: absolute;
+      top: -5px;
+      left: -10px;
+      z-index: 1;
+      
+      span{
+        background: $primary-blue;
+        display: inline-block;
+        padding: 10px;
+        color: $white;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: $semibold;
+        font-size: 0.8rem;
+        -webkit-box-shadow: 10px 11px 17px -15px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 11px 17px -15px rgba(0,0,0,0.75);
+        box-shadow: 10px 11px 17px -15px rgba(0,0,0,0.75);
+      }
+    }
+  }
   .events-slider{
-    padding: 30px 0px;
+    padding: 20px 0px;
     .slick-slide {
       margin: 0 10px;
     }
@@ -603,44 +638,20 @@
     .slick-list {
       margin: 0 -10px;
     }
-    .slick-dots{
-      bottom: -20px;
+  }
+  .event{
+    padding: 20px 20px;
+    border: 1px solid $gray-200;
+    p{
+      margin-bottom: 3px;
+      font-size: 0.98rem;
     }
-    .slick-dots li button:before{
-      font-size: 12px;
+    .event-date{
+      color: lighten($primary-blue, 20);
     }
-    
-    .slick-dots li.slick-active button::before{
-      color: #2C86E4;
-    }
-    .event{
-      background: $white-color;
-      height: 140px;
-      .d-flex{
-        align-content: center;
-        align-items: center;
-        height: 100%;
-      }
-      .date{
-        padding: 25px 50px;
-        height: 100%;
-        background: darken($primary-blue, 5);
-        color: $white-color;
-        span{
-          font-size: 42px;
-          font-weight: $bold;
-        }
-        p{
-          letter-spacing: 2px;
-        }
-      }
-      .title{
-        padding: 34px;
-        h6{
-          line-height: 1.6;
-          font-size: 1.1rem;
-        }
-      }
+    &:hover{
+      background: lighten($primary-blue, 60);
+      border: 1px solid $primary-blue;
     }
   }
 }
