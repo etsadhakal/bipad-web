@@ -100,7 +100,7 @@
 
     .slide{
       position: relative;
-      height: 85vh;
+      height: 70vh;
       .image-wrapper{
         height: 100%;
         img{
@@ -192,7 +192,7 @@
 
 .multi-purpose{
 
-  padding: 20px 0px;
+  padding: 20px 0px 0px 0px;
   .tabs{
     li{
       margin: 0px 10px;
@@ -221,7 +221,7 @@
     }
   }
   .tab-content{
-    margin: 60px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     .news{
       a{
         .card{
@@ -287,7 +287,7 @@
 .e-portal{
   .sec-accordion{
     width: 50%;
-    padding: 40px;
+    padding: 20px 20px 20px 0px;
     #accordion{
       margin-top: 40px;
       .card{
@@ -409,8 +409,7 @@
 }
 .gallery{
   background: $gray-100;
-  padding: 60px 20px;
-  padding-bottom: 120px;
+  padding: 20px 20px;
   .heading{
     a{
       vertical-align: middle;
@@ -443,9 +442,10 @@
       border: none;
       border-radius: 0px;
       .video-title{
-        padding: 30px;
+        padding: 10px 0px;
         h5{
-          font-weight: $medium;
+          font-weight: $regular;
+          font-size: 1rem;
         }
       }
       &:hover{

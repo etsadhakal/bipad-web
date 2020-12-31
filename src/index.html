@@ -483,9 +483,9 @@
     </div>
   </section>
   <section class="e-portal">
-    <div class="d-flex justify-content-between">
-      <div class="sec-accordion">
-        <div class="container">
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <div class="sec-accordion">
           <div class="heading">
             <h2>E-Portals</h2>
           </div>
@@ -546,13 +546,13 @@
 
           </div>
         </div>
-      </div>
-      <div class="map-box">
-        <div class="map-container" id="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3072998.8219103897!2d83.83444456880768!3d27.971936322153482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1604825764179!5m2!1sen!2snp"
-            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
+        <div class="map-box">
+          <div class="map-container" id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3072998.8219103897!2d83.83444456880768!3d27.971936322153482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1604825764179!5m2!1sen!2snp"
+              width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -618,7 +618,7 @@
       <div class="videos-slider">
         <div class="video-card">
           <div class="card">
-            <iframe width="100%" height="400"
+            <iframe width="100%" height="300"
               src="https://www.youtube.com/embed/G-UDc7g75aA?list=PLewBQDjBvyaIfx2ZmJ5TdKAY3plYGpNXL" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
@@ -629,7 +629,7 @@
         </div>
         <div class="video-card">
           <div class="card">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/o9VcbBxqIT8" frameborder="0"
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/o9VcbBxqIT8" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
             <div class="video-title">
@@ -639,7 +639,28 @@
         </div>
         <div class="video-card">
           <div class="card">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/zZf0EgEZp-o" frameborder="0"
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/zZf0EgEZp-o" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <div class="video-title">
+              <h5>Let's be concerned about landslides, be vigilant, be safe ...
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="card">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/o9VcbBxqIT8" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <div class="video-title">
+              <h5>Sister & brother-in-law's advice to avoid flooding may also work for you. Let's watch this video.</h5>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="card">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/zZf0EgEZp-o" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
             <div class="video-title">
@@ -866,9 +887,9 @@
         infinite: true
       });
       $('.videos-slider').slick({
-        slidesToShow: 2,
+        slidesToShow: 4,
         slidesToScroll: 1,
-        dots: true,
+        dots: false,
         arrows: false,
         autoplay: true,
         autoplaySpeed: 5000,
